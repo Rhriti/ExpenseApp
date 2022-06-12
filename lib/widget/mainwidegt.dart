@@ -20,8 +20,10 @@ class _MainwidgetState extends State<Mainwidget> {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [SLW(translist), Userinput(func)],
+    return SingleChildScrollView(
+      child: Column(
+        children: [ Userinput(func),SLW(translist)],
+      ),
     );
   }
 }

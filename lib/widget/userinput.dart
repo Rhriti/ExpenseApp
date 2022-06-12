@@ -13,25 +13,32 @@ class _UserinputState extends State<Userinput> {
 
   @override
   Widget build(BuildContext context) {
-    return Card(
-      child: Column(
-        children: [
-          TextField(
-            decoration: InputDecoration(labelText: 'item name'),
-            controller: itemcontroller,
-          ),
-          TextField(
-            decoration: InputDecoration(labelText: 'price'),
-            controller: pricecontroller,
-          ),
-          ElevatedButton(
-              onPressed: () {
-                print(itemcontroller);
-                print(pricecontroller);
-                widget.func(itemcontroller.text,double.parse(pricecontroller.text));
-              },
-              child: Text('submit'))
-        ],
+    return Card(margin: EdgeInsets.symmetric(horizontal: 50,vertical: 20),
+      child: Container(padding: EdgeInsets.all(10),
+        child: Column(crossAxisAlignment: CrossAxisAlignment.end,
+          children: [
+            TextField(
+              decoration: InputDecoration(icon: Icon(Icons.shopping_bag_outlined),label: Text('Item name')),
+              controller: itemcontroller,
+            ),
+            TextField(
+              decoration: InputDecoration(labelText: 'price',icon: Icon(Icons.currency_rupee)),
+              controller: pricecontroller,keyboardType: TextInputType.number,
+            ),
+            SizedBox(height: 10,),
+            ElevatedButton(
+              style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(Colors.black),
+                  shape: MaterialStateProperty.all(RoundedRectangleBorder(borderRadius: BorderRadius.circular(20))),
+              ),
+                onPressed: () {
+                  print(itemcontroller);
+                  print(pricecontroller);
+                  widget.func(itemcontroller.text,double.parse(pricecontroller.text));
+                },
+                child: Text('submit'))
+          ],
+        ),
       ),
     );
   }

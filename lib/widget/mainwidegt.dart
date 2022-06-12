@@ -8,22 +8,21 @@ class Mainwidget extends StatefulWidget {
 }
 
 class _MainwidgetState extends State<Mainwidget> {
-  List <Transaction> translist = [
-    Transaction(item: 'banana', date: DateTime.now(), amount: 44.4)
+  List<Transaction> translist = [
+    Transaction(item: 'banana', date: DateTime.now(), amount: 44.4),
   ];
 
   void func(String saman, double daam) {
     setState(() {
-      translist.add(Transaction(item: saman, amount: daam,date: DateTime.now()));
+      translist
+          .add(Transaction(item: saman, amount: daam, date: DateTime.now()));
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      child: Column(
-        children: [ Userinput(func),SLW(translist)],
-      ),
+    return Column(
+      children: [Userinput(func), SLW(translist)],
     );
   }
 }

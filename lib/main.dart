@@ -12,12 +12,21 @@ class Expenseapp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Expense App'),
         ),
-        body: SingleChildScrollView(
-          child: Column(
-            children: [Card(child: Container(child: Text('CARD'),width: double.infinity,),color: Colors.pink,),Mainwidget()],
+        body: Container(height: 600,
+          child: ListView(
+            children: [
+              Card(
+                child: Container(
+                  child: Text('CARD'),
+                  width: double.infinity,
+                ),
+                color: Colors.pink,
+              ),
+              Mainwidget()
+            ],
           ),
         ),
-      )
+      ),
     );
   }
 }

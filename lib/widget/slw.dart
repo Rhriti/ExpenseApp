@@ -8,8 +8,7 @@ class SLW extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(height: 300,
-
+    return Container(height: 478,
       child: ListView.builder(
         padding: EdgeInsets.all(5),
         itemCount: list.length,
@@ -26,7 +25,7 @@ class SLW extends StatelessWidget {
                       size: 17,
                     ),
                     Text(
-                      list[index].amount.toString(),
+                      list[index].amount.toStringAsFixed(2),
                     ),
                   ],
                 ),

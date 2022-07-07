@@ -1,16 +1,14 @@
-# personal_app
+# Expense App
 
-A new Flutter project.
+A Flutter project.
 
-## Getting Started
+## Homepage
+# ![image](https://user-images.githubusercontent.com/76724198/177705738-eadaaa38-9a04-4666-a593-4a5a88ee3027.png)
 
-This project is a starting point for a Flutter application.
+## Add new transactions
+# ![image](https://user-images.githubusercontent.com/76724198/177705804-30ba1124-6f99-465b-ad91-36b87ede1eec.png)
 
-A few resources to get you started if this is your first Flutter project:
+## Monitor daily expenses using graph
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![image](https://user-images.githubusercontent.com/76724198/177706450-50b841d4-1b16-4fd0-a5a1-94b0eb5af418.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
